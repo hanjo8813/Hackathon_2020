@@ -1,35 +1,35 @@
 {% extends 'menubar.html' %}
 {% block content %}
-<!-- 페이지 설명 섹션-->
-<section class="page-section bg-light">
-    <div class="container" style=" font-size : 2.2rem;">
-        로그인
-    </div>
-</section>
+    <!-- 페이지 설명 섹션-->
+    <section class="page-section bg-light" >
+        <div class="container" style=" font-size : 2.2rem;">
+            로그인
+        </div>
+    </section>
 
-<!-- 로그인 섹션 -->
-<section class="page-section text-center" style="padding:4rem;">
-    <!-- 아이콘-->
-    <div class="container" style="font-size : 2rem;">
-        <img src="static/assets/img/mainlogo.png" style="width:13%; height:13%">
-    </div>
-    <br>
-    <!-- 로그인 폼-->
-    <div class="container">
-        <form action='' name='login' method='get' style="width:40%; margin: 0 auto;">
-            <label class="w3-xlarge"><b>아이디</b></label>
-            <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="ID">
-            <br>
-            <label class="w3-xlarge"><b>비밀번호</b></label>
-            <input class="w3-input w3-border w3-round-xxlarge" type="password" name="pwd" placeholder="PASSWORD">
-            <br><br>
+    <!-- 로그인 섹션 -->
+    <section class="page-section text-center" style="padding:4rem;">
+        <!-- 아이콘-->
+        <div class="container" style="font-size : 2rem;">
+            <img src="static/assets/img/mainlogo.png" style="width:13%; height:13%">
+        </div>
+        <br>
+        <!-- 로그인 폼-->
+        <div class="container">     
+            <form action='/login' name='login' method='POST' style="width:40%; margin: 0 auto;">
+                <label class="w3-xlarge"><b>아이디</b></label>
+                <input class="w3-input w3-border w3-round-xxlarge" type="text" name="email" placeholder="ID">
+                <br>
+                <label class="w3-xlarge"><b>비밀번호</b></label>
+                <input class="w3-input w3-border w3-round-xxlarge" type="password" name="password" placeholder="PASSWORD">
+                <br><br>
 
-            <!-- 버튼-->
-            <input class="" type="submit" value="로그인">
-            &nbsp;&nbsp;&nbsp;
-            <button class="" type="button" onclick="location.href='/register' ">회원가입</button>
-        </form>
-    </div>
-</section>
+                <!-- 버튼-->
+                <input class="" type="submit" value="로그인">
+                &nbsp;&nbsp;&nbsp;
+                <button class="" type="button" onclick = "location.href='/registerpage' ">회원가입</button>
+            </form>
+        </div>
+    </section>
 
 {% endblock %}

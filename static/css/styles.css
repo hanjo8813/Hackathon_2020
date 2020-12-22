@@ -11,7 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-
+@font-face{
+  font-family:'NanumSquare';
+  src: url(./assets/font/NanumSquare.woff) format('woff');
+}
 
 :root {
   --blue: #007bff;

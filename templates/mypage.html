@@ -1,5 +1,77 @@
 {% extends 'menubar.html' %}
 {% block content %}
+    <!--css 커스텀-->
+    <style>
+        .mytd{
+            color:black;
+        }
+        .mytable{
+            width:100%;
+            text-align: center;
+            font-size:14px;
+        }
+        .myth{
+            height:60px;
+            border-bottom :1px solid #dadada ;
+            background-color: white;
+            font-weight:bolder;
+            font-size:1.2rem;
+        }
+        .mytr{
+            color:#6e6e6eb9;
+            height:60px;
+            border-bottom :1px solid rgb(214, 214, 214) ;
+        }
+        .mytr:hover{
+            background-color: #f1f1f1;
+        }
+        .my_a {
+            color: black;
+            text-decoration: none;
+        }
+        .my_a:hover {
+            color: rgb(164,26,55);
+            font-weight: bolder;
+        }
+        .mybutton{
+            background-color: #fff;
+            width:45px; height:45px;
+            border: 1px solid rgb(214, 214, 214);
+        }
+        .mybutton:hover{
+            border: 1.5px solid black;
+        }
+        .mybutton2{
+            font-size:1rem;
+            color:white;
+            background-color: rgb(164,26,55);
+            width:90px; height:35px;
+            position: absolute;
+            right : 200px;
+            border: 1px;
+            border-radius:3px;
+        }
+        .mybutton3{
+            font-size:0.9rem;
+            color:white;
+            background-color: rgb(164,26,55);
+            width:90px; height:35px;
+            border: 1px;
+            border-radius:3px;
+        }
+        .mybutton3:hover, .mybutton2:hover {
+        background-color: #FEC034;
+        font-weight: bolder;
+        }
+        body:not(.device-touch) .mybutton2 , .mybutton3 {
+        transition: background-color .2s linear;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear;
+        }
+        .my_i{
+            color : rgb(164,26,55);
+        }
+    </style>
 
     <!-- 페이지 설명 섹션-->
     <section class="page-section bg-light" >
@@ -8,7 +80,6 @@
         </div>
     </section>
     
-
     <!-- 정보 섹션 -->
     <section class="page-section" style="padding:4rem;">
         <!-- 1 마일리지 현황-->
@@ -24,6 +95,7 @@
                 <div style="font-size : 2.2rem; "> 
                     1000 P
                 </div>
+             
             </div>
         </div>
 
