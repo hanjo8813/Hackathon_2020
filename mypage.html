@@ -40,41 +40,8 @@
 
     <!--css 커스텀-->
     <style>
-        .num_div{
-            width: 100%;
-            height: 50px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .pic_div{
-            width: 100%;
-            height: 200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .pic_div1 {
-            background-size: cover;
-            margin-left : 5%;
-            margin-right: 5%;
-            width: 23.333%;
-            height: 100%;
-            float: left;
-        }
-        
-        .in_div{
-            width: 100%;
-            height: 100px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .in_div1 {
-            margin-left : 2%;
-            margin-right: 2%;
-            width: 29.333%;
-            height: 100%;
-            float: left;
-            padding-top:20px;
+        .mytd{
+            color:black;
         }
         .mytable{
             width:100%;
@@ -83,7 +50,7 @@
         }
         .myth{
             height:60px;
-            border-bottom :1px solid #f1f1f1 ;
+            border-bottom :1px solid #dadada ;
             background-color: white;
             font-weight:bolder;
             font-size:1.2rem;
@@ -101,7 +68,7 @@
             text-decoration: none;
         }
         .my_a:hover {
-            color: #FEC034;
+            color: rgb(164,26,55);
             font-weight: bolder;
         }
         .mybutton{
@@ -115,7 +82,7 @@
         .mybutton2{
             font-size:1rem;
             color:white;
-            background-color: rgb(184, 73, 73);
+            background-color: rgb(164,26,55);
             width:90px; height:35px;
             position: absolute;
             right : 200px;
@@ -188,17 +155,16 @@
             <hr>
             <table class="mytable">
                 <tr class="myth" style="background-color: #f8f8f8;">
-                    <th style="width:20%">분야</th>
+                    <th style="border-right :1px solid #dadada; width:20%">분야</th>
                     <th style="width:80%">설명</th>
                 </tr>
                 <tr class="mytr">
-                    <td>개발</td>
-                    <td style="color:black">Java Python C++</td>
+                    <td style="border-right :1px solid #dadada;">개발</td>
+                    <td class="mytd">Java Python C++</td>
                 </tr>
                 <tr class="mytr">
-                    <td>디자인</td>
+                    <td style="border-right :1px solid #dadada;">디자인</td>
                     <td style="color:black">포토샵</td>
-
                 </tr>
             </table>
         </div>
@@ -207,18 +173,115 @@
         <div class="container" style="padding-top:5rem;">
             <div style="font-size : 1.5rem;">세종인 이력</div>
             <hr>
+            <table class="mytable">
+                <tr class="myth" style="background-color: #f8f8f8;">
+                    <th style="border-right :1px solid #dadada; width:10%">번호</th>
+                    <th style="border-right :1px solid #dadada; width:70%">링크</th>
+                    <th style="border-right :1px solid #dadada; width:10%">별점</th>
+                    <th style="width:10%">날짜</th>
+                </tr>
+                <tr class="mytr">
+                    <td style="border-right :1px solid #dadada;">1</td>
+                    <td class="mytd" style=" border-right :1px solid #dadada;"><a class="my_a" href="#">내가 과거에 세종인에서 협력한 이력1</a></td>
+                    <td class="mytd" style="border-right :1px solid #dadada;">5점</td>
+                    <td class="mytd">2020-12-22</td>
+
+                </tr>
+                <tr class="mytr">
+                    <td style="border-right :1px solid #dadada;">2</td>
+                    <td class="mytd" style=" border-right :1px solid #dadada;color:black"><a class="my_a" href="#">내가 과거에 세종인에서 협력한 이력2</a></td>
+                    <td class="mytd" style="border-right :1px solid #dadada;">3점</td>
+                    <td class="mytd">2020-12-22</td>
+                </tr>
+            </table>
         </div>
 
         <!-- 4 내가 등록한 외주 현황 -->
         <div class="container" style="padding-top:5rem;">
             <div style="font-size : 1.5rem;">등록 현황</div>
             <hr>
+            <ul>
+                <!-- 내가 등록한거 1-->
+                <li>
+                    <a class="my_a" style="font-size:1.1rem"href="#">내가 등록한 모집글1</a>
+                    <br><br>
+                    <table class="mytable">
+                        <tr class="myth" style="background-color: #f8f8f8;">
+                            <th style="border-right :1px solid #dadada;width:10%">번호</th>
+                            <th style="border-right :1px solid #dadada;width:30%">이름</th>
+                            <th style="width:20%"> </th>
+                            <th style="width:20%">관리</th>
+                            <th style="width:20%"> </th>
+                        </tr>
+                        <tr class="mytr">
+                            <td style="border-right :1px solid #dadada;">1</td>
+                            <td class="mytd" style="border-right :1px solid #dadada;">한재원</td>
+                            <td class="mytd"><button >이력보기</button></td>
+                            <td class="mytd"><button >신청받기</button></td>
+                            <td class="mytd" ><button >거절하기</button></td>
+                        </tr>
+                        <tr class="mytr">
+                            <td style="border-right :1px solid #dadada;">2</td>
+                            <td class="mytd" style="border-right :1px solid #dadada;">강홍구</td>
+                            <td class="mytd"><button >이력보기</button></td>
+                            <td class="mytd"><button >신청받기</button></td>
+                            <td class="mytd"><button >거절하기</button></td>
+                        </tr>
+                    </table>
+                </li>
+                <br>
+                <!-- 내가 등록한거 2-->
+                <li>
+                    <a class="my_a" style="font-size:1.1rem"href="#">내가 등록한 모집글 2</a>
+                    <br><br>
+                    <table class="mytable">
+                        <tr class="myth" style="background-color: #f8f8f8;">
+                            <th style="border-right :1px solid #dadada;width:10%">번호</th>
+                            <th style="border-right :1px solid #dadada;width:30%">이름</th>
+                            <th style="width:20%"> </th>
+                            <th style="width:20%">관리</th>
+                            <th style="width:20%"> </th>
+                        </tr>
+                        <tr class="mytr">
+                            <td style="border-right :1px solid #dadada;">1</td>
+                            <td class="mytd" style="border-right :1px solid #dadada;">김지수</td>
+                            <td class="mytd"><button >이력보기</button></td>
+                            <td class="mytd"><button >신청받기</button></td>
+                            <td class="mytd" ><button >거절하기</button></td>
+                        </tr>
+                        
+                    </table>
+                </li>
+            </ul>
+            
         </div>
 
         <!-- 5 내가 신청한 외주 현황-->
         <div class="container" style="padding-top:5rem;">
             <div style="font-size : 1.5rem;">신청 현황</div>
             <hr>
+            
+                    <table class="mytable">
+                        <tr class="myth" style="background-color: #f8f8f8;">
+                            <th style="border-right :1px solid #dadada;width:10%">번호</th>
+                            <th style="border-right :1px solid #dadada;width:80%">링크</th>
+                            <th style="width:10%">현황</th>
+                        </tr>
+                        <tr class="mytr">
+                            <td style="border-right :1px solid #dadada;">1</td>
+                            <td class="mytd" style="border-right :1px solid #dadada;">신청한 게시글 1</td>
+                            <td class="mytd">거절</td>
+
+                        </tr>
+                        <tr class="mytr">
+                            <td style="border-right :1px solid #dadada;">2</td>
+                            <td class="mytd" style="border-right :1px solid #dadada;">신청한 게시글 1</td>
+                            <td class="mytd">승인</td>
+
+                        </tr>
+                    </table>
+                <br>
+                
         </div>
 
 
