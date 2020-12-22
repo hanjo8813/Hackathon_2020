@@ -8,11 +8,11 @@
     <title>세종인</title>
 
     <!-- favicon 아이콘 참조-->
-    <link rel="shortcut icon" href="../static/assets/img/favicon.ico" >
-    <link rel="icon" href="../static/assets/img/favicon.ico" >
+    <link rel="shortcut icon" href="../static/assets/img/favicon.ico">
+    <link rel="icon" href="../static/assets/img/favicon.ico">
 
     <!-- font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
     <!-- 부트스트랩/벤더/w3c 웹 참조-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,10 +22,11 @@
     <!-- 커스터마이징 CSS-->
     <link href="../static/css/styles.css" rel="stylesheet" />
     <link href="../static/css/modern-business.css" rel="stylesheet">
-    
+
     <!-- 구글 웹폰트 참조-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- 배민-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,76 +38,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
 
-     <!--css 커스텀-->
-     <style>
-        .mytd{
-            color:black;
+    <!--css 커스텀-->
+    <style>
+        .mytd {
+            color: black;
         }
-        .mytable{
-            width:100%;
+
+        .mytable {
+            width: 100%;
             text-align: center;
-            font-size:14px;
+            font-size: 14px;
         }
-        .myth{
-            height:60px;
-            border-bottom :1px solid #dadada ;
+
+        .myth {
+            height: 60px;
+            border-bottom: 1px solid #dadada;
             background-color: white;
-            font-weight:bolder;
-            font-size:1.2rem;
+            font-weight: bolder;
+            font-size: 1.2rem;
         }
-        .mytr{
-            color:#6e6e6eb9;
-            height:60px;
-            border-bottom :1px solid rgb(214, 214, 214) ;
+
+        .mytr {
+            color: #6e6e6eb9;
+            height: 60px;
+            border-bottom: 1px solid rgb(214, 214, 214);
         }
-        .mytr:hover{
+
+        .mytr:hover {
             background-color: #f1f1f1;
         }
+
         .my_a {
             color: black;
             text-decoration: none;
         }
+
         .my_a:hover {
-            color: rgb(164,26,55);
+            color: rgb(164, 26, 55);
             font-weight: bolder;
         }
-        .mybutton{
+
+        .mybutton {
             background-color: #fff;
-            width:45px; height:45px;
+            width: 45px;
+            height: 45px;
             border: 1px solid rgb(214, 214, 214);
         }
-        .mybutton:hover{
+
+        .mybutton:hover {
             border: 1.5px solid black;
         }
-        .mybutton2{
-            font-size:1rem;
-            color:white;
-            background-color: rgb(164,26,55);
-            width:90px; height:35px;
+
+        .mybutton2 {
+            font-size: 1rem;
+            color: white;
+            background-color: rgb(164, 26, 55);
+            width: 90px;
+            height: 35px;
             position: absolute;
-            right : 200px;
+            right: 200px;
             border: 1px;
-            border-radius:3px;
+            border-radius: 3px;
         }
-        .mybutton3{
-            font-size:0.9rem;
-            color:white;
-            background-color: rgb(164,26,55);
-            width:90px; height:35px;
+
+        .mybutton3 {
+            font-size: 0.9rem;
+            color: white;
+            background-color: rgb(164, 26, 55);
+            width: 90px;
+            height: 35px;
             border: 1px;
-            border-radius:3px;
+            border-radius: 3px;
         }
-        .mybutton3:hover, .mybutton2:hover {
-        background-color: #FEC034;
-        font-weight: bolder;
+
+        .mybutton3:hover,
+        .mybutton2:hover {
+            background-color: #FEC034;
+            font-weight: bolder;
         }
-        body:not(.device-touch) .mybutton2 , .mybutton3 {
-        transition: background-color .2s linear;
-        -webkit-transition: background-color .2s linear;
-        -o-transition: background-color .2s linear;
+
+        body:not(.device-touch) .mybutton2,
+        .mybutton3 {
+            transition: background-color .2s linear;
+            -webkit-transition: background-color .2s linear;
+            -o-transition: background-color .2s linear;
         }
-        .my_i{
-            color : rgb(164,26,55);
+
+        .my_i {
+            color: rgb(164, 26, 55);
         }
     </style>
 
@@ -114,12 +133,26 @@
 
 <body id="page-top">
     <!-- 상단메뉴바-->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="border-bottom : 0.001px solid rgb(216, 216, 216)">
-        <div class="container" >
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"
+        style="border-bottom : 0.001px solid rgb(216, 216, 216)">
+        <div class="container">
             <!-- 로고-->
-            <a class="navbar-brand js-scroll-trigger" href="/logo_index"><img src="../static/assets/img/logo.png" style="width:12rem; height:3rem;"></a>
+            <a class="navbar-brand js-scroll-trigger" href="/logo_index"><img src="../static/assets/img/logo.png"
+                    style="width:12rem; height:3rem;"></a>
             <!-- 메뉴버튼-->
             <div class="collapse navbar-collapse">
+                {% if 'email' not in session %}
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="document.getElementById('id01').style.display='block'" style="font-size:1.3rem;">팀원구하기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="document.getElementById('id01').style.display='block'" style="font-size:1.3rem;">재능공유</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="document.getElementById('id01').style.display='block'" style="font-size:1.3rem;">마이페이지</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/loginpage" style="font-size:1.3rem;">로그인</a></li>
+                </ul>
+                {% else %}
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger " href="/teamplay"
                             style="font-size:1.3rem;">팀원구하기</a></li>
@@ -127,9 +160,10 @@
                             style="font-size:1.3rem;">재능공유</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/mypage"
                             style="font-size:1.3rem;">마이페이지</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/loginpage"
-                            style="font-size:1.3rem;">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/logout"
+                            style="font-size:1.3rem;">로그아웃</a></li>
                 </ul>
+                {% endif%}
             </div>
         </div>
     </nav>
@@ -146,9 +180,23 @@
         </div>
     </footer>
 
+    <!-- 모달-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="width:30%">
+            <header class="w3-container w3-green">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container w3-center w3-large">
+                <br><br><b>로그인이 필요한 서비스입니다.</b><br><br><br>
+            </div>
+        </div>
+    </div>
+
     <!-- 퀵메뉴 -->
     <div id="gotoTop" style="display:block; padding:10px;">
-        <a class="js-scroll-trigger" href="#page-top" style="color:#212529; font-size:40px;"><i class="fas fa-angle-up"></i></a>
+        <a class="js-scroll-trigger" href="#page-top" style="color:#212529; font-size:40px;"><i
+                class="fas fa-angle-up"></i></a>
     </div>
 
     <!-- Third party plugin JS-->

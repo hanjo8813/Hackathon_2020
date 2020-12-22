@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-from flask import Flask , render_template , request , redirect , jsonify , session
+from flask import Flask , render_template , request , redirect , jsonify , session, flash
 import pymysql
 import hashlib
 import bcrypt
@@ -16,6 +16,7 @@ app.config.update(
     DEBUG = True ,
     JWT_SECRET_KEY = 'secret'
 )
+app.secret_key = b'1234wqerasdfzxcv'
 jwt = JWTManager(app)
 db = pymysql.connect(host = 'localhost' , port = 3306 , user = 'root' , passwd = '8813' , db = 'hackaton' , charset = 'utf8') # db 접속 본인 환경맞춰 설정
 cursor = db.cursor() # 객체에 담기
@@ -52,7 +53,6 @@ def loginpage():
 def login():
     if request.method == 'POST':
         login_info = request.form
-
         email = login_info['email']
         password = login_info['password']
         print(email + password)
@@ -60,15 +60,26 @@ def login():
         rows_count = cursor.execute(sql , email)
         if rows_count > 0:
             user_info = cursor.fetchone() # 일치하는 정보 객체에 담기
+            name = user_info[3] 
+            print(user_info)
             print("user info : " , user_info)
             is_pw_correct = bcrypt.checkpw(password.encode('UTF-8') , user_info[2].encode('UTF-8')) # 패스워드 맞는지 확인
             if is_pw_correct: # 일치하게되면
+                # email 이라는 세션을 저장
+                session['name'] = name
                 session['email'] = email
+                return redirect('/mypage')
             else: # 비밀번호가 일치하지 않는다면
                 return redirect('/loginpage')
         else:
             print('User does not exist')
             return redirect('/loginpage')
+
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    return render_template('index.html')
 
 @app.route('/registerpage')
 def regit():
