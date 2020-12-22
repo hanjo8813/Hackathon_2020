@@ -1,0 +1,61 @@
+{% extends 'menubar.html' %}
+{% block content %}
+
+
+<style>
+    .mytr{
+        color:black;
+        height:70px;
+        border-bottom :1px solid rgb(214, 214, 214) ;
+        
+    }
+    .myth{
+            height:60px;
+            border-bottom :1px solid #dadada ;
+            background-color: white;
+            font-size:1.2rem;   
+        }
+</style>
+
+ <!-- 페이지 설명 섹션-->
+ <section class="page-section bg-light" >
+    <div class="container" style=" font-size : 2.2rem;">
+        구인하기
+    </div>
+</section>
+
+<!-- 서비스 소개-->
+<section class="page-section">
+    <div class="container" >
+        <div style="padding:2rem; padding-top:0rem; font-size: 1.5rem;">
+            <span style="color:rgb(164, 26, 55); font-size: 2rem;">"등록자DB"</span><span> &nbsp;님의 게시물</span>
+        </div>
+        <table class="mytable" style="font-size: 1.1rem;">
+            <tr class="mytr" style="border-top : 2px solid rgb(131, 131, 131)">
+                <th style="width:20%; background-color: #f8f8f8;font-weight: 100;">제목</th>
+                <th style="width:80%"></th>
+            </tr>
+            <tr class="mytr">
+                <td style="background-color: #f8f8f8; ">제시한 마일리지</td>
+                <td></td>
+            </tr>
+            <tr class="mytr">
+                <td style="background-color: #f8f8f8;">마감기간</td>
+                <td></td>
+            </tr>
+            <tr class="mytr">
+                <td style="background-color: #f8f8f8;">필수재능</td>
+                <td></td>
+            </tr>
+            <tr class="mytr">
+                <td style="background-color: #f8f8f8;">내용</td>
+                <td></td>
+            </tr>
+        </table>
+        <br><br>
+        <button class="mybutton2" type="submit" onclick="location.href='/find' ">등록하기</button>
+        <br><br><br><br>
+    </div>
+</section>
+
+{% endblock %}

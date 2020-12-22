@@ -102,7 +102,6 @@ def register():
         print(register_info)
         cursor.execute(sql , (email , hased_password , name , sex, department, sno))
         db.commit() #데이터 삽입 , 삭제 등의 구문에선 commit 해주어야함
-
         db.close() # 연결 해제        return redirect(request.url)
     return render_template('/login.html')
 
@@ -110,6 +109,13 @@ def register():
 @app.route('/find')
 def find():
     return render_template('/find.html')
+
+#---------------------------------------------------------
+@app.route('/goboard1')
+def goboard1():
+    return render_template('/board.html')
+
+
 
 #---------------------------------------------------------
 

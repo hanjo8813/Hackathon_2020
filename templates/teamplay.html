@@ -1,6 +1,64 @@
 {% extends 'menubar.html' %}
 {% block content %}
+<!-- 페이지 설명 섹션-->
+<section class="page-section bg-light">
+    <div class="container" style=" font-size : 2.2rem;">
+        재능 공유하기
+    </div>
+</section>
 
-팀플레이 커뮤니티
 
+<!-- 카테고리 섹션 -->
+<section class="page-section" style="padding:4rem;">
+    <div class="container">
+        <div style="font-size : 30px; margin-left:2rem ">재능 장터</div>
+        <hr style="width:100%; height: 2px; border: 0 none; background-color: rgb(164,26,55);">
+
+        <table class="mytable">
+            <tr class="myth">
+                <th style="width:10%">번호</th>
+                <th style="width:70%">글제목</th>
+                <th style="width:10%">글쓴이</th>
+                <th style="width:10%">작성일</th>
+            </tr>
+            <tr class="mytr" style="background-color: #f8f8f8;">
+                <td>공지</td>
+                <td style="text-align: left; color:black"><a class="my_a" href="#">공지사항입니다</a></td>
+                <td>hanjo8813</td>
+                <td>2020-12-17</td>
+            </tr>
+            <tr class="mytr">
+                <td>4</td>
+                <td style="text-align: left; color:black"><a class="my_a" href="/goboard1">UI/UX 디자이너 구합니다.</a></td>
+                <td>ghis22130</td>
+                <td>2020-12-17</td>
+            </tr>
+            <tr class="mytr">
+                <td>3</td>
+                <td style="text-align: left; color:black"><a class="my_a" href="#">로고 디자이너를 구합니다!!</a></td>
+                <td>wgrey0103</td>
+                <td>2020-12-17</td>
+            </tr>
+            <tr class="mytr">
+                <td>2</td>
+                <td style="text-align: left; color:black"><a class="my_a" href="#">python 재능이 있는분 필요합니다.</a></td>
+                <td>portriss</td>
+                <td>2020-12-17</td>
+            </tr>
+            <tr class="mytr">
+                <td>1</td>
+                <td style="text-align: left; color:black"><a class="my_a" href="#">연기과 모델이 필요합니다.</a></td>
+                <td>jeonber2</td>
+                <td>2020-12-17</td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <div style="text-align: center;">
+            <button class="mybutton">&#60;</button>&nbsp;&nbsp;
+            <button class="mybutton">1</button>&nbsp;&nbsp;
+            <button class="mybutton">&#62;</button>
+            <button class="mybutton2" type="button" onclick="location.href='/find'">글쓰기</button>
+        </div>
+</section>
 {% endblock %}
