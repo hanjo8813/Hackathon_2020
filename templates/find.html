@@ -5,8 +5,9 @@
 <style>
     .mytr{
         color:black;
-        height:70px;
+        height:90px;
         border-bottom :1px solid rgb(214, 214, 214) ;
+        
     }
     .myth{
             height:60px;
@@ -27,31 +28,39 @@
 <!-- 서비스 소개-->
 <section class="page-section">
     <div class="container" >
-
-        <table class="mytable">
-            <tr class="mytr">
-                <th style="width:20%; background-color: #f8f8f8;">제목</th>
+        <table class="mytable" style="font-size: 1.1rem;">
+            <tr class="mytr" style="border-top : 2px solid rgb(131, 131, 131)">
+                <th style="width:20%; background-color: #f8f8f8;font-weight: 100;">제목</th>
                 <th style="width:80%"><input type="text" name="" style="width:90%"></th>
             </tr>
             <tr class="mytr">
-                <td style="background-color: #f8f8f8;">제시할 마일리지</td>
-                <td style="width:80%"><input type="text" name="" style="width:90%"></td>
+                <td style="background-color: #f8f8f8; ">제시할 마일리지</td>
+                <td>
+                    <input type="text" name="" style="margin-left:3rem; width:20%">
+                    <b style="margin-left:2.5rem; font-size:1rem; color: rgb(164, 26, 55);"> 현재 보유한 마일리지 : 1000</b>
+                </td>
             </tr>
             <tr class="mytr">
-                <td style="background-color: #f8f8f8;">모집기간</td>
-                <td style="width:80%"><input type="text" name="" style="width:90%"></td>
+                <td style="background-color: #f8f8f8;">마감기간</td>
+                <td><input type="date" value="2020-12-23"></td>
             </tr>
             <tr class="mytr">
                 <td style="background-color: #f8f8f8;">필수재능</td>
-                <td style="width:80%"><input type="text" name="" style="width:90%"></td>
+                <td>
+                    <input class="w3-check" type="checkbox" value=""> <label style="margin-right:2rem;">&nbsp;웹 백엔드</label>
+                    <input class="w3-check" type="checkbox" value=""> <label style="margin-right:2rem;">&nbsp;프론트엔드</label>
+                    <input class="w3-check" type="checkbox" value=""> <label style="margin-right:2rem;">&nbsp;디자인</label>
+                    <input class="w3-check" type="checkbox" value=""> <label style="margin-right:2rem;">&nbsp;촬영</label>
+                    <input class="w3-check" type="checkbox" value=""> <label>&nbsp;영상편집</label>
+                </td>
             </tr>
             <tr class="mytr">
-                <td style="background-color: #f8f8f8;">내용</td>
-                <td style="width:80%"><input type="text" name="" style="width:90%; height:50%;"></td>
+                <td style="background-color: #f8f8f8; height:200px;">내용</td>
+                <td style="padding-top : 1.5rem; padding-bottom : 1.5rem; "><textarea cols="90" rows="10"></textarea></td>
             </tr>
         </table>
         <br><br>
-        <button class="mybutton2" type="button" onclick="location.href='/find' ">등록하기</button>
+        <button class="mybutton2" type="submit" onclick="location.href='/find' ">등록하기</button>
         <br><br><br><br>
     </div>
 </section>

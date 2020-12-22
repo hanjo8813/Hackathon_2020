@@ -61,8 +61,6 @@ def login():
         if rows_count > 0:
             user_info = cursor.fetchone() # 일치하는 정보 객체에 담기
             name = user_info[3] 
-            print(user_info)
-            print("user info : " , user_info)
             is_pw_correct = bcrypt.checkpw(password.encode('UTF-8') , user_info[2].encode('UTF-8')) # 패스워드 맞는지 확인
             if is_pw_correct: # 일치하게되면
                 # email 이라는 세션을 저장
