@@ -10028,6 +10028,7 @@ p {
 }
 
 .page-section {
+  font-family : 'Noto Sans KR', sans-serif;
   padding-top: 5rem;
   padding-bottom : 2rem;
 }

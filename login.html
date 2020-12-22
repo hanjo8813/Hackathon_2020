@@ -65,38 +65,45 @@
         </div>
     </nav>
 
-    
-
-    <!-- 서비스 소개-->
-    <section class="page-section">
-        <div class="container text-center" style="background-color:yellow">
-            <p style="font-size : 1.3rem;"> 폰트확인 no bold </p>
-            <p style="font-size : 1.3rem; font-weight: bold;"> 폰트 확인 bold</p>
-            <p> 소개 들어갈 자리 (디자인해야됨)</p>
-            <br><br><br><br><br><br><br>
+    <!-- 페이지 설명 섹션-->
+    <section class="page-section bg-light" >
+        <div class="container" style=" font-size : 2.5rem;">
+            로그인
         </div>
     </section>
 
-    <hr>
+    <!-- 로그인 섹션 -->
+    <section class="page-section text-center" style="padding:4rem;">
+        <!-- 아이콘-->
+        <div class="container" style="font-size : 2rem;">
+            <img src="./assets/img/mainlogo.png" style="width:13%; height:13%">
+        </div>
+        <br>
+        <!-- 로그인 폼-->
+        <div class="container">     
+            <form action='' name='login' method='get' style="width:40%; margin: 0 auto;">
+                <label class="w3-xlarge"><b>아이디</b></label>
+                <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="ID">
+                <br>
+                <label class="w3-xlarge"><b>비밀번호</b></label>
+                <input class="w3-input w3-border w3-round-xxlarge" type="password" name="pwd" placeholder="PASSWORD">
+                <br><br>
 
-    <!-- 서비스 소개-->
-    <section class="page-section">
-        <div class="container text-center" style="background-color:blue" >
-            <p> 두드림 카테고리 들어갈 자리</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <!-- 버튼-->
+                <input class="" type="submit" value="로그인">
+                &nbsp;&nbsp;&nbsp;
+                <button class="" type="button" onclick = "location.href='register.html' ">회원가입</button>
+              </form>
         </div>
     </section>
-
-
 
     <!-- footer-->
-    <footer class="" style="background-color: red;">
+    <footer class="" style="background-color: rgb(164,26,55)">
         footer
-        <div class="container" >
+        <div class="container" style="color:#fff">
             컨테이너 -> 디자인
         </div>
     </footer>
-
 
     <!-- 퀵메뉴 -->
     <div id="gotoTop" style="display:block; padding:10px;">
