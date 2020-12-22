@@ -31,8 +31,13 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register.html')
+
+@app.route('/find')
+def find():
+    return render_template('find.html')
 #---------------------------------------------------------
 
-    
+
+
 if __name__ == '__main__':
     app.run(debug=True)
