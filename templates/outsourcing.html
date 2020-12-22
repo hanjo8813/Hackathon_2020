@@ -1,82 +1,7 @@
 {% extends 'menubar.html' %}
 {% block content %}
-
-    <!--css 커스텀-->
-    <style>
-        .mytd{
-            color:black;
-        }
-        .mytable{
-            width:100%;
-            text-align: center;
-            font-size:14px;
-        }
-        .myth{
-            height:60px;
-            border-bottom :1px solid #dadada ;
-            background-color: white;
-            font-weight:bolder;
-            font-size:1.2rem;
-        }
-        .mytr{
-            color:#6e6e6eb9;
-            height:60px;
-            border-bottom :1px solid rgb(214, 214, 214) ;
-        }
-        .mytr:hover{
-            background-color: #f1f1f1;
-        }
-        .my_a {
-            color: black;
-            text-decoration: none;
-        }
-        .my_a:hover {
-            color: rgb(164,26,55);
-            font-weight: bolder;
-        }
-        .mybutton{
-            background-color: #fff;
-            width:45px; height:45px;
-            border: 1px solid rgb(214, 214, 214);
-        }
-        .mybutton:hover{
-            border: 1.5px solid black;
-        }
-        .mybutton2{
-            font-size:1rem;
-            color:white;
-            background-color: rgb(164,26,55);
-            width:90px; height:35px;
-            position: absolute;
-            right : 200px;
-            border: 1px;
-            border-radius:3px;
-        }
-        .mybutton3{
-            font-size:0.9rem;
-            color:white;
-            background-color: rgb(164,26,55);
-            width:90px; height:35px;
-            border: 1px;
-            border-radius:3px;
-        }
-        
-        .mybutton3:hover, .mybutton2:hover {
-        background-color: #FEC034;
-        font-weight: bolder;
-        }
-        body:not(.device-touch) .mybutton2 , .mybutton3 {
-        transition: background-color .2s linear;
-        -webkit-transition: background-color .2s linear;
-        -o-transition: background-color .2s linear;
-        }
-        .my_i{
-            color : rgb(164,26,55);
-        }
-    </style>
-
-   <!-- 페이지 설명 섹션-->
-   <section class="page-section bg-light" >
+<!-- 페이지 설명 섹션-->
+<section class="page-section bg-light">
     <div class="container" style=" font-size : 2.2rem;">
         재능 공유하기
     </div>
@@ -88,7 +13,7 @@
     <div class="container">
         <div style="font-size : 30px; margin-left:2rem ">커뮤니티 게시판</div>
         <hr style="width:100%; height: 2px; border: 0 none; background-color: rgb(164,26,55);">
-        
+
         <table class="mytable">
             <tr class="myth">
                 <th style="width:10%">번호</th>
@@ -128,12 +53,12 @@
             </tr>
         </table>
         <br><br><br>
-        
+
         <div style="text-align: center;">
             <button class="mybutton">&#60;</button>&nbsp;&nbsp;
-            <button class="mybutton">1</button>&nbsp;&nbsp; 
+            <button class="mybutton">1</button>&nbsp;&nbsp;
             <button class="mybutton">&#62;</button>
-            <button class="mybutton2">글쓰기</button>
+            <button class="mybutton2" type="button" onclick="location.href='/find'">글쓰기</button>
         </div>
 </section>
 {% endblock %}

@@ -89,13 +89,19 @@ def register():
             INSERT INTO Userinfo (email, hashed_password, name, sex, department, student_number) VALUES (%s , %s , %s , %s, %s, %s);
         """
         # 아이디 겹치면 try 구문 사용해서 오류 반환해주기 ... 구현해야함
-      #  cursor.execute(sql , (username , hased_password, email , department)) # sql 실행
+        # cursor.execute(sql , (username , hased_password, email , department)) # sql 실행
         print(register_info)
         cursor.execute(sql , (email , hased_password , name , sex, department, sno))
         db.commit() #데이터 삽입 , 삭제 등의 구문에선 commit 해주어야함
 
         db.close() # 연결 해제        return redirect(request.url)
     return render_template('/login.html')
+
+
+@app.route('/find')
+def find():
+    return render_template('/find.html')
+
 #---------------------------------------------------------
 
     
