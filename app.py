@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 # 상단 메뉴바 href ----------------------------------------
+@app.route('/logo_index')
+def logo_index():
+    return render_template('index.html')
+
 @app.route('/teamplay')
 def teamplay():
     return render_template('teamplay.html')
@@ -27,4 +31,4 @@ def login():
 
     
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
