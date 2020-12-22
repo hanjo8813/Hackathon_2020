@@ -40,6 +40,97 @@
 
     <!--css 커스텀-->
     <style>
+        .num_div{
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pic_div{
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .pic_div1 {
+            background-size: cover;
+            margin-left : 5%;
+            margin-right: 5%;
+            width: 23.333%;
+            height: 100%;
+            float: left;
+        }
+        
+        .in_div{
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .in_div1 {
+            margin-left : 2%;
+            margin-right: 2%;
+            width: 29.333%;
+            height: 100%;
+            float: left;
+            padding-top:20px;
+        }
+        .mytable{
+            width:100%;
+            text-align: center;
+            font-size:14px;
+        }
+        .myth{
+            height:60px;
+            border-bottom :1px solid #f1f1f1 ;
+            background-color: white;
+            font-weight:bolder;
+            font-size:1.2rem;
+        }
+        .mytr{
+            color:#6e6e6eb9;
+            height:60px;
+            border-bottom :1px solid rgb(214, 214, 214) ;
+        }
+        .mytr:hover{
+            background-color: #f1f1f1;
+        }
+        .my_a {
+            color: black;
+            text-decoration: none;
+        }
+        .my_a:hover {
+            color: #FEC034;
+            font-weight: bolder;
+        }
+        .mybutton{
+            background-color: #fff;
+            width:45px; height:45px;
+            border: 1px solid rgb(214, 214, 214);
+        }
+        .mybutton:hover{
+            border: 1.5px solid black;
+        }
+        .mybutton2{
+            font-size:1rem;
+            color:white;
+            background-color: rgb(184, 73, 73);
+            width:90px; height:35px;
+            position: absolute;
+            right : 200px;
+            border: 1px;
+            border-radius:3px;
+        }
+        .mybutton2:hover {
+        background-color: #FEC034;
+        font-weight: bolder;
+        }
+        body:not(.device-touch) .mybutton2 {
+        transition: background-color .2s linear;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear;
+        }
     </style>
 </head>
 
@@ -71,14 +162,70 @@
             마이페이지
         </div>
     </section>
+    
 
-    <!-- 로그인 섹션 -->
-    <section class="page-section text-center" style="padding:4rem;">
-        <div class="container">
-            
-        <br>
-        
+    <!-- 정보 섹션 -->
+    <section class="page-section" style="padding:4rem;">
+        <!-- 1 마일리지 현황-->
+        <div class="container" style="padding-top:1rem;" >
+            <div style="color:#fff; margin: 0 auto; background-color:rgb(184, 73, 73); width:20%; height:9rem; text-align:center;"> 
+                <div style="font-size : 1.3rem; padding-top:0.5rem;"> 
+                    한재원 님
+                </div>
+                <br>
+                <div style="font-size : 1rem; "> 
+                    현재 마일리지
+                </div>
+                <div style="font-size : 2.2rem; "> 
+                    1000 P
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 내 재능 (수정가능) -->
+        <div class="container" style="padding-top:5rem;">
+            <div style="font-size : 1.5rem;">나의 재능 &nbsp; <button class="mybutton2"> 수정하기 </button></div>
+            <hr>
+            <table class="mytable">
+                <tr class="myth" style="background-color: #f8f8f8;">
+                    <th style="width:20%">분야</th>
+                    <th style="width:80%">설명</th>
+                </tr>
+                <tr class="mytr">
+                    <td>개발</td>
+                    <td style="color:black">Java Python C++</td>
+                </tr>
+                <tr class="mytr">
+                    <td>디자인</td>
+                    <td style="color:black">포토샵</td>
+
+                </tr>
+            </table>
+        </div>
+
+        <!-- 3 세종인 이력-->
+        <div class="container" style="padding-top:5rem;">
+            <div style="font-size : 1.5rem;">세종인 이력</div>
+            <hr>
+        </div>
+
+        <!-- 4 내가 등록한 외주 현황 -->
+        <div class="container" style="padding-top:5rem;">
+            <div style="font-size : 1.5rem;">등록 현황</div>
+            <hr>
+        </div>
+
+        <!-- 5 내가 신청한 외주 현황-->
+        <div class="container" style="padding-top:5rem;">
+            <div style="font-size : 1.5rem;">신청 현황</div>
+            <hr>
+        </div>
+
+
     </section>
+
+
+
 
     <!-- footer-->
     <footer class="" style="background-color: rgb(164,26,55)">
