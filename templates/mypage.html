@@ -1,43 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <title>세종인</title>
-
-    <!-- favicon 아이콘 참조-->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" >
-    <link rel="icon" href="./assets/img/favicon.ico" >
-
-    <!-- font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-
-    <!-- 부트스트랩/벤더/w3c 웹 참조-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- 커스터마이징 CSS-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/modern-business.css" rel="stylesheet">
-    
-    <!-- 구글 웹폰트 참조-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- 배민-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <!-- noto sans-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    <!-- 궁서체-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
-
+{% extends 'menubar.html' %}
+{% block content %}
     <!--css 커스텀-->
     <style>
         .mytd{
@@ -89,39 +51,28 @@
             border: 1px;
             border-radius:3px;
         }
-        .mybutton2:hover {
+        .mybutton3{
+            font-size:0.9rem;
+            color:white;
+            background-color: rgb(164,26,55);
+            width:90px; height:35px;
+            border: 1px;
+            border-radius:3px;
+        }
+        
+        .mybutton3:hover, .mybutton2:hover {
         background-color: #FEC034;
         font-weight: bolder;
         }
-        body:not(.device-touch) .mybutton2 {
+        body:not(.device-touch) .mybutton2 , .mybutton3 {
         transition: background-color .2s linear;
         -webkit-transition: background-color .2s linear;
         -o-transition: background-color .2s linear;
         }
+        .my_i{
+            color : rgb(164,26,55);
+        }
     </style>
-</head>
-
-<body id="page-top">
-    <!-- 상단메뉴바-->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="border-bottom : 0.001px solid rgb(216, 216, 216)">
-        <div class="container" >
-            <!-- 로고-->
-            <a class="navbar-brand js-scroll-trigger" href="./index.html"><img src="./assets/img/logo.png" style="width:12rem; height:3rem;"></a>
-            <!-- 메뉴버튼-->
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger " href="./teamplay.html"
-                            style="font-size:1.3rem;">팀플</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./outsourcing.html"
-                            style="font-size:1.3rem;">재능공유</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./mypage.html"
-                            style="font-size:1.3rem;">마이페이지</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./login.html"
-                            style="font-size:1.3rem;">로그인</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <!-- 페이지 설명 섹션-->
     <section class="page-section bg-light" >
@@ -146,12 +97,15 @@
                 <div style="font-size : 2.2rem; "> 
                     1000 P
                 </div>
+             
             </div>
         </div>
 
         <!-- 2 내 재능 (수정가능) -->
         <div class="container" style="padding-top:5rem;">
-            <div style="font-size : 1.5rem;">나의 재능 &nbsp; <button class="mybutton2"> 수정하기 </button></div>
+            <div style="font-size : 1.5rem;"><i class="my_i fas fa-check-circle"></i> 나의 재능
+                <button class="mybutton2" type="button" onclick = "location.href='myinfo_fix.html'"> 수정하기 </button>
+            </div>
             <hr>
             <table class="mytable">
                 <tr class="myth" style="background-color: #f8f8f8;">
@@ -171,7 +125,7 @@
 
         <!-- 3 세종인 이력-->
         <div class="container" style="padding-top:5rem;">
-            <div style="font-size : 1.5rem;">세종인 이력</div>
+            <div style="font-size : 1.5rem;"><i class="my_i fas fa-check-circle"></i> 세종인 이력</div>
             <hr>
             <table class="mytable">
                 <tr class="myth" style="background-color: #f8f8f8;">
@@ -198,7 +152,7 @@
 
         <!-- 4 내가 등록한 외주 현황 -->
         <div class="container" style="padding-top:5rem;">
-            <div style="font-size : 1.5rem;">등록 현황</div>
+            <div style="font-size : 1.5rem;"><i class="my_i fas fa-check-circle"></i> 등록 현황</div>
             <hr>
             <ul>
                 <!-- 내가 등록한거 1-->
@@ -216,16 +170,16 @@
                         <tr class="mytr">
                             <td style="border-right :1px solid #dadada;">1</td>
                             <td class="mytd" style="border-right :1px solid #dadada;">한재원</td>
-                            <td class="mytd"><button >이력보기</button></td>
-                            <td class="mytd"><button >신청받기</button></td>
-                            <td class="mytd" ><button >거절하기</button></td>
+                            <td class="mytd"><button class="mybutton3">이력보기</button></td>
+                            <td class="mytd"><button class="mybutton3">신청받기</button></td>
+                            <td class="mytd" ><button class="mybutton3">거절하기</button></td>
                         </tr>
                         <tr class="mytr">
                             <td style="border-right :1px solid #dadada;">2</td>
                             <td class="mytd" style="border-right :1px solid #dadada;">강홍구</td>
-                            <td class="mytd"><button >이력보기</button></td>
-                            <td class="mytd"><button >신청받기</button></td>
-                            <td class="mytd"><button >거절하기</button></td>
+                            <td class="mytd"><button class="mybutton3">이력보기</button></td>
+                            <td class="mytd"><button class="mybutton3">신청받기</button></td>
+                            <td class="mytd"><button class="mybutton3">거절하기</button></td>
                         </tr>
                     </table>
                 </li>
@@ -245,9 +199,9 @@
                         <tr class="mytr">
                             <td style="border-right :1px solid #dadada;">1</td>
                             <td class="mytd" style="border-right :1px solid #dadada;">김지수</td>
-                            <td class="mytd"><button >이력보기</button></td>
-                            <td class="mytd"><button >신청받기</button></td>
-                            <td class="mytd" ><button >거절하기</button></td>
+                            <td class="mytd"><button class="mybutton3">이력보기</button></td>
+                            <td class="mytd"><button class="mybutton3">신청받기</button></td>
+                            <td class="mytd" ><button class="mybutton3">거절하기</button></td>
                         </tr>
                         
                     </table>
@@ -257,7 +211,7 @@
 
         <!-- 5 내가 신청한 외주 현황-->
         <div class="container" style="padding-top:5rem;">
-            <div style="font-size : 1.5rem;">신청 현황</div>
+            <div style="font-size : 1.5rem;"><i class="my_i fas fa-check-circle"></i> 신청 현황</div>
             <hr>
                     <table class="mytable">
                         <tr class="myth" style="background-color: #f8f8f8;">
@@ -280,27 +234,4 @@
                 <br>
         </div>
     </section>
-
-    <!-- footer-->
-    <footer class="" style="background-color: rgb(164,26,55)">
-        footer
-        <div class="container" style="color:#fff">
-            컨테이너 -> 디자인
-        </div>
-    </footer>
-
-    <!-- 퀵메뉴 -->
-    <div id="gotoTop" style="display:block; padding:10px;">
-        <a class="js-scroll-trigger" href="#page-top" style="color:#212529; font-size:40px;"><i class="fas fa-angle-up"></i></a>
-    </div>
-
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
-    <!-- 커스텀 js-->
-    <script src="js/scripts.js"></script>
-</body>
-
-</html>
+{% endblock %}
