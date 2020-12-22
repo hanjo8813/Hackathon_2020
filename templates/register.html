@@ -1,37 +1,43 @@
 {% extends 'menubar.html' %}
 {% block content %}
+<!-- 페이지 설명 섹션-->
+<section class="page-section bg-light">
+    <div class="container" style=" font-size : 2.5rem;">
+        회원가입
+    </div>
+</section>
 
-    <!-- 페이지 설명 섹션-->
-    <section class="page-section bg-light" >
-        <div class="container" style=" font-size : 2.5rem;">
-            회원가입
-        </div>
-    </section>
-
-    <!-- 회원가입 섹션 -->
-    <section class="page-section text-center" style="padding:4rem;">
-        <!-- 아이콘-->
-        <div class="container" style="font-size : 2rem;">
-            <img src="static/assets/img/mainlogo.png" style="width:13%; height:13%">
-        </div>
-        <br>
-        <!-- 로그인 폼-->
-        <div class="container">     
-            <form action='' name='login' method='get' style="width:40%; margin: 0 auto;">
-                <label class="w3-xlarge"><b>아이디</b></label>
-                <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="ID">
-                <br>
-                <label class="w3-xlarge"><b>비밀번호</b></label>
-                <input class="w3-input w3-border w3-round-xxlarge" type="password" name="pwd" placeholder="PASSWORD">
-                <br>
-                <label class="w3-xlarge"><b>E-mail</b></label>
-                <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="E-mail">
-                <br>
-                <label class="w3-xlarge"><b>학과</b></label>
-                <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="Department">
-                <br>
-                <input class="" type="submit" value="회원가입">
-              </form>
-        </div>
-    </section>
+<!-- 회원가입 섹션 -->
+<section class="page-section text-center" style="padding:4rem;">
+    <!-- 아이콘-->
+    <div class="container" style="font-size : 2rem;">
+        <img src="static/assets/img/mainlogo.png" style="width:13%; height:13%">
+    </div>
+    <br>
+    <!-- 로그인 폼-->
+    <div class="container">
+        <form action='' name='login' method='get' style="width:40%; margin: 0 auto;">
+            <label class="w3-xlarge"><b>아이디</b></label>
+            <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="ID">
+            <br>
+            <label class="w3-xlarge"><b>비밀번호</b></label>
+            <input class="w3-input w3-border w3-round-xxlarge" type="password" name="pwd" placeholder="PASSWORD">
+            <br>
+            <label class="w3-xlarge"><b>E-mail</b></label>
+            <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="E-mail">
+            <br>
+            <label class="w3-xlarge"><b>학과</b></label><br>
+            <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="E-mail">
+            <br>
+            <label class="w3-xlarge"><b>학번</b></label>
+            <input class="w3-input w3-border w3-round-xxlarge" type="text" name="id" placeholder="Student Number">
+            <br>
+            <label class="w3-xlarge"><b>성별</b></label><br><br>
+            <input class="w3-radio" type="radio" name="sex" value = "남성" checked = "checked"><label class="w3-large">&nbsp;남자</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="w3-radio" type="radio" name="sex" value = "여성" ><label class="w3-large">&nbsp;여자</label>
+            <br><br><br>
+            <input class="" type="submit" value="회원가입">
+        </form>
+    </div>
+</section>
 {% endblock %}
