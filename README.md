@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="./readmeimg.png">
+<img src="./reference_img/readmeimg.png">
 
 ## 팀원
 
@@ -31,14 +31,14 @@
 
 <br>
 
-<img src="./readmeimg2.png">
+<img src="./reference_img/readmeimg2.png">
 
 <br>
 
 ## 구현 기술
 
 > ### Block Chain
-- Flask
+<img src="./reference_img/1.png" style="width:30%, height:10%;">
 
 > ### Frontend
 - Bootstrap, W3C
