@@ -38,7 +38,7 @@
 ## 구현 기술
 
 > ### Block Chain
-<img src="./reference_img/1.png" style="width:20%; height:3rem;">
+<img src="./reference_img/1.png" style="width:20px; height:10px;">
 
 > ### Frontend
 <img src="./reference_img/2.png" style="width:20%; height:3rem;">
