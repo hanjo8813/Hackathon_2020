@@ -46,31 +46,31 @@
     </tr>
     <tr>
         <td>
-        <img src="./reference_img/1.png" width=80 height=80>
+        <img src="./reference_img/1.png" width=100 height=100>
         </td>
         <td>
-        <img src="./reference_img/2.png" width=80 height=80>
-        <img src="./reference_img/3.png" width=80 height=80>
+        <img src="./reference_img/2.png" width=100 height=100>&nbsp;
+        <img src="./reference_img/3.png" width=100 height=100>
         </td>
         <td> 
-        <img src="./reference_img/1.png" width=80 height=80>
+        <img src="./reference_img/1.png" width=100 height=100>
         </td>
         <td>
-        <img src="./reference_img/4.png" width=80 height=80>
+        <img src="./reference_img/4.png" width=100 height=100>
         </td>
     </tr>
-   
+    <tr>
+        <td>
+        Flask
+        </td>
+        <td>
+        Bootstrap, W3
+        </td>
+        <td>
+        Flask
+        </td>
+        <td>
+        MySQL
+        </td>
+    </tr>
 </table>
-
-> ### Block Chain
-<img src="./reference_img/1.png" >
-
-> ### Frontend
-<img src="./reference_img/2.png" width=50 height=50> &nbsp;
-<img src="./reference_img/3.png" width=50 height=50>
-
-> ### Backend
-<img src="./reference_img/1.png" width=110 height=50>
-
-> ### Database
-<img src="./reference_img/4.png" width=110 height=50>
