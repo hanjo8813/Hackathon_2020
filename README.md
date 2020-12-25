@@ -37,29 +37,26 @@
 
 ## 구현 기술
 
-<table style="text-align:center">
+<table style="text-align:center;">
     <tr>
         <th>Block Chain</th>
-        <th colspan="1">Frontend</th>
-        <th></th>
+        <th>Frontend</th>
         <th>Backend</th>
         <th>Database</th>
     </tr>
     <tr>
         <td>
-        <img src="./reference_img/1.png" width=70 height=70>
+        <img src="./reference_img/1.png" width=80 height=80>
         </td>
         <td>
-        <img src="./reference_img/2.png" width=70 height=70>
-        </td>
-        <td>
-        <img src="./reference_img/3.png" width=70 height=70>
+        <img src="./reference_img/2.png" width=80 height=80>
+        <img src="./reference_img/3.png" width=80 height=80>
         </td>
         <td> 
-        <img src="./reference_img/1.png" width=70 height=70>
+        <img src="./reference_img/1.png" width=80 height=80>
         </td>
         <td>
-        <img src="./reference_img/4.png" width=70 height=70>
+        <img src="./reference_img/4.png" width=80 height=80>
         </td>
     </tr>
    
