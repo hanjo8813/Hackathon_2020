@@ -310,8 +310,6 @@ def new_transaction():
     if not all(k in values for k in required):
         return 'Missing values', 400
 
-    
-    
     #index = blockchain.new_transaction(values['sender'], values['recipient'], values['amount'])
     #response = {'message': f'Transaction will be added to Block {index}'}
     #return jsonify(response), 201
