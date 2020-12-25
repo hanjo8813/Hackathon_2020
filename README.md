@@ -59,7 +59,7 @@
         <img src="./reference_img/4.png" width=100 height=100>
         </td>
     </tr>
-    <tr>
+    <tr style="text-align:center;">
         <td>
         Flask
         </td>
