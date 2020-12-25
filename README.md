@@ -37,8 +37,36 @@
 
 ## 구현 기술
 
+<table>
+    <tr>
+        <th>Block Chain</th>
+        <th colspan="2">Frontend</th>
+        <th></th>
+        <th>Backend</th>
+        <th>Database</th>
+    </tr>
+    <tr>
+        <td>
+        <img src="./reference_img/1.png" width=50 height=50>
+        </td>
+        <td>
+        <img src="./reference_img/2.png" width=50 height=50>
+        </td>
+        <td>
+        <img src="./reference_img/3.png" width=50 height=50>
+        </td>
+        <td> 
+        <img src="./reference_img/1.png" width=50 height=50>
+        </td>
+        <td>
+        <img src="./reference_img/4.png" width=50 height=50>
+        </td>
+    </tr>
+   
+</table>
+
 > ### Block Chain
-<img src="./reference_img/1.png" width=110 height=50>
+<img src="./reference_img/1.png" >
 
 > ### Frontend
 <img src="./reference_img/2.png" width=50 height=50> &nbsp;
