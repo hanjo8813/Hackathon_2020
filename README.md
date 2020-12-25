@@ -38,13 +38,14 @@
 ## 구현 기술
 
 > ### Block Chain
-<img src="./reference_img/1.png" style="width:30%, height:10%;">
+<img src="./reference_img/1.png" style="width:20%; height:3rem;">
 
 > ### Frontend
-- Bootstrap, W3C
+<img src="./reference_img/2.png" style="width:20%; height:3rem;">
+<img src="./reference_img/3.png" style="width:20%; height:3rem;">
 
 > ### Backend
-- Flask
+<img src="./reference_img/1.png" style="width:20%; height:3rem;">
 
 > ### Database
-- MySql
+<img src="./reference_img/4.png" style="width:20%; height:3rem;">
