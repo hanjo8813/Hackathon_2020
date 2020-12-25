@@ -38,14 +38,14 @@
 ## 구현 기술
 
 > ### Block Chain
-<img src="./reference_img/1.png" style="width:20px; height:10px;">
+<img src="./reference_img/1.png" width=110 height=50>
 
 > ### Frontend
-<img src="./reference_img/2.png" style="width:20%; height:3rem;">
-<img src="./reference_img/3.png" style="width:20%; height:3rem;">
+<img src="./reference_img/2.png" width=50 height=50> &nbsp;
+<img src="./reference_img/3.png" width=50 height=50>
 
 > ### Backend
-<img src="./reference_img/1.png" style="width:20%; height:3rem;">
+<img src="./reference_img/1.png" width=110 height=50>
 
 > ### Database
-<img src="./reference_img/4.png" style="width:20%; height:3rem;">
+<img src="./reference_img/4.png" width=110 height=50>
