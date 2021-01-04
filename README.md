@@ -35,7 +35,7 @@
 
 <br>
 
-## 구현 기술
+## 개발 정보
 
 <table style="text-align:center;">
     <tr>
